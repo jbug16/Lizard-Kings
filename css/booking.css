@@ -1,0 +1,42 @@
+.booking-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.booking-container form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.booking-container h1 {
+    margin-bottom: 20px;
+}
+
+.booking-container label {
+    display: block;
+    margin-top: 10px;
+}
+
+.booking-container input,
+.booking-container select,
+.booking-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-container .hidden {
+    display: none;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
+	<head>
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -10,7 +10,9 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-</head>
+        <link href="css/custom.css" rel="stylesheet" />
+		<link href="css/booking.css" rel="stylesheet">
+    </head>
 <body>
 	<!-- Responsive navbar-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,19 +29,48 @@
 							  About
 							</a>
 							<ul class="dropdown-menu dropdown-menu-dark">
-							  <li><a class="dropdown-item" href="#">Who We Are</a></li>
-							  <li><a class="dropdown-item" href="#">What We Do</a></li>
-							  <li><a class="dropdown-item" href="#">FAQ</a></li>
+								<li><a class="dropdown-item" href="about.html#who">Who We Are</a></li>
+								<li><a class="dropdown-item" href="about.html#what">What We Do</a></li>
+								<li><a class="dropdown-item" href="about.html#faq">FAQ</a></li>
 							</ul>
 						  </li>
 						</ul>
 					</div>
-					<li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+					<li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://quickstart-cd512b60.myshopify.com/">Shop</a></li>
 					<li class="nav-item"><a class="nav-link" href="book-now.html">Book Now</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
+	<!-- Booking Form -->
+    <div class="booking-container">
+        <h1>Book a Service</h1>
+        <form id="serviceForm">
+            <label for="serviceType">Select Service:</label>
+            <select id="serviceType" name="serviceType" onchange="showRelevantFields()">
+                <option value="" selected disabled>Choose an option</option>
+                <option value="hunt">Hunt</option>
+                <option value="homeRemoval">Home Removal</option>
+            </select>
+            
+            <div id="huntFields" class="hidden">
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" min="1">
+                
+                <label for="children">Number of Children:</label>
+                <input type="number" id="children" name="children" min="0">
+            </div>
+            
+            <div id="homeRemovalFields" class="hidden">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="formMessage"></div>
+    </div>
 
 	<!-- Bootstrap core JS-->
 	<script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
@@ -58,6 +89,7 @@
 			}
 		  });
 		});
-	  </script>
+	</script>
+	<script src="form-scripts.js"></script>
 </body>
 </html>
