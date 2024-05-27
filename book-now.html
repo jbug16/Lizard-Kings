@@ -11,85 +11,51 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/custom.css" rel="stylesheet" />
-		<link href="css/booking.css" rel="stylesheet">
     </head>
-<body>
-	<!-- Responsive navbar-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container px-5">
-			<a class="navbar-brand" href="index.html">Lizard Kings</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-					<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-						<ul class="navbar-nav">
-						  <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							  About
-							</a>
-							<ul class="dropdown-menu dropdown-menu-dark">
-								<li><a class="dropdown-item" href="about.html#who">Who We Are</a></li>
-								<li><a class="dropdown-item" href="about.html#what">What We Do</a></li>
-								<li><a class="dropdown-item" href="about.html#faq">FAQ</a></li>
+	<body>
+		<!-- Responsive navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container px-5">
+				<a class="navbar-brand" href="index.html">Lizard Kings</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+						<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+							<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								About
+								</a>
+								<ul class="dropdown-menu dropdown-menu-dark">
+									<li><a class="dropdown-item" href="about.html#who">Who We Are</a></li>
+									<li><a class="dropdown-item" href="about.html#what">What We Do</a></li>
+									<li><a class="dropdown-item" href="about.html#faq">FAQ</a></li>
+								</ul>
+							</li>
 							</ul>
-						  </li>
-						</ul>
-					</div>
-					<li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://quickstart-cd512b60.myshopify.com/">Shop</a></li>
-					<li class="nav-item"><a class="nav-link" href="book-now.html">Book Now</a></li>
-				</ul>
+						</div>
+						<li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://quickstart-cd512b60.myshopify.com/">Shop</a></li>
+						<li class="nav-item"><a class="nav-link" href="book-now.html">Book Now</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 
-	<!-- Booking Form -->
-    <div class="booking-container">
-        <h1>Book a Service</h1>
-        <form id="serviceForm">
-            <label for="serviceType">Select Service:</label>
-            <select id="serviceType" name="serviceType" onchange="showRelevantFields()">
-                <option value="" selected disabled>Choose an option</option>
-                <option value="hunt">Hunt</option>
-                <option value="homeRemoval">Home Removal</option>
-            </select>
-            
-            <div id="huntFields" class="hidden">
-                <label for="adults">Number of Adults:</label>
-                <input type="number" id="adults" name="adults" min="1">
-                
-                <label for="children">Number of Children:</label>
-                <input type="number" id="children" name="children" min="0">
-            </div>
-            
-            <div id="homeRemovalFields" class="hidden">
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address">
-            </div>
-            
-            <button type="submit">Submit</button>
-        </form>
-        <div id="formMessage"></div>
-    </div>
+		<!-- Booking Form -->
+    
 
-	<!-- Bootstrap core JS-->
-	<script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-		  var currentPath = window.location.pathname + window.location.hash;
-		  var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-		  
-		  navLinks.forEach(function(link) {
-			var linkPath = new URL(link.href, window.location.origin).pathname + new URL(link.href, window.location.origin).hash;
-			if (linkPath === currentPath) {
-			  link.classList.add('active');
-			} else {
-			  link.classList.remove('active');
-			}
-		  });
-		});
-	</script>
-	<script src="form-scripts.js"></script>
-</body>
+		<!-- Footer-->
+		<footer class="py-5 bg-dark">
+			<div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Lizard Kings 2024</p></div>
+		</footer>
+
+
+		<!-- Bootstrap core JS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Core theme JS-->
+		<script src="js/scripts.js"></script>
+
+
+	</body>
 </html>
