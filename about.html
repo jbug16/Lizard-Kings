@@ -11,6 +11,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/custom.css" rel="stylesheet" />
+        <link href="css/about.css" rel="stylesheet" />
     </head>
 
 
@@ -30,9 +31,11 @@
 								About
 								</a>
 								<ul class="dropdown-menu dropdown-menu-dark">
-									<li><a class="dropdown-item" href="about.html#who">Who We Are</a></li>
-									<li><a class="dropdown-item" href="about.html#what">What We Do</a></li>
-									<li><a class="dropdown-item" href="about.html#faq">FAQ</a></li>
+									<li><a class="dropdown-item" href="about.html#backstory">Backstory</a></li>
+                                  <li><a class="dropdown-item" href="about.html#team">The Team</a></li>
+                                  <li><a class="dropdown-item" href="about.html#services">Services</a></li>
+                                  <li><a class="dropdown-item" href="about.html#reviews">Reviews</a></li>
+                                  <li><a class="dropdown-item" href="about.html#faq">FAQ</a></li>
 								</ul>
 							</li>
 							</ul>
@@ -47,16 +50,25 @@
 		<!-- About -->
 		<div class="container px-4 px-lg-5">
 			<div class="backstory">
-				<h1>Start of the Lizard Life</h1>
-				<p>For 125 years, The Animal Rescue League of Boston (ARL) has responded to the needs of animals and the people who care about them. In fact, we are often the first to respond.</p>
-				<p>With over 1,200 dedicated volunteers and 100 staff members, ARL lends unwavering support to local animals, families, and neighborhoods. We provide outstanding veterinary care, adoption, and field services. We also confront the root causes of animal cruelty and neglect through special police investigation and advocacy aimed at strengthening the laws that protect animals.</p>
-				<p class="important-info">Since 1899, ARL has helped over 6.2 million animals in need!</p>
-				<p>Today, we increasingly focus on prevention and the impact we can have on more animals; keeping them out of shelters and in the communities where they belong. This ambitious call to action is reflected in our vision for the future.</p>
-				<p>ARL does not receive government grants or public funding and relies on the generosity of our supporters to help animals in need. We ask all those who share our goals to reaffirm a commitment to the future we all hope to achieve. Together, we can make it happen!</p>
+				<h1 class="title" id="backstory">Start of the Lizard Life</h1>
+				<div class="container text-center">
+					<div class="row">
+						<div class="col">
+							<p>For 125 years, The Animal Rescue League of Boston (ARL) has responded to the needs of animals and the people who care about them. In fact, we are often the first to respond.</p>
+							<p>With over 1,200 dedicated volunteers and 100 staff members, ARL lends unwavering support to local animals, families, and neighborhoods. We provide outstanding veterinary care, adoption, and field services. We also confront the root causes of animal cruelty and neglect through special police investigation and advocacy aimed at strengthening the laws that protect animals.</p>
+							<p class="important-info">Since 1899, ARL has helped over 6.2 million animals in need!</p>
+							<p>Today, we increasingly focus on prevention and the impact we can have on more animals; keeping them out of shelters and in the communities where they belong. This ambitious call to action is reflected in our vision for the future.</p>
+							<p>ARL does not receive government grants or public funding and relies on the generosity of our supporters to help animals in need. We ask all those who share our goals to reaffirm a commitment to the future we all hope to achieve. Together, we can make it happen!</p>
+						</div>
+						<div class="col">
+							<img class="backstory-img" src="assets/family.png" alt="">
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="people">
 				<div class="container text-center">
-					<h1>Leadership</h1>
+					<h1 id="team">Leadership</h1>
 					<div class="row">
 						<div class="col">
 							<img id="john-smith" src="assets/person1.jpg" alt="">
@@ -90,12 +102,92 @@
 				</div>
 			</div>
 			<div class="services">
-				<h1>What We Do</h1>
+				<h1 id="services">What We Do</h1>
 				<h2 id="hunts">Hunts</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis mollitia veniam molestias, unde at est labore dolores amet provident sint, dolor veritatis placeat quasi assumenda pariatur necessitatibus? Exercitationem, ad!</p>
 				<!-- add image carosal for hunting photos -->
 				<h2 id="removal">Home Removel</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis mollitia veniam molestias, unde at est labore dolores amet provident sint, dolor veritatis placeat quasi assumenda pariatur necessitatibus? Exercitationem, ad!</p>
+			</div>
+			<div class="review">
+				<div class="container">
+					<h2 class="review-title" id="reviews">Reviews</h2>
+					<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, atque? Repudiandae
+						possimus asperiores hic nemo id a molestiae minus impedit!</p>
+				
+					<!-- Clients Review Section -->
+					<div class="reviewSection">
+			
+					<!-- Clients Review-1 Section Starts from Here  -->
+						<div class="reviewItem">
+							<div class="top">
+								<div class="clientImage">
+									<img src="assets\client.png" alt="img">
+									<span>Raju Sheoran</span>
+								</div>
+								<ul>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+								</ul>
+							</div>
+							<article>
+								<p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+									voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+									facere exercitationem!</p>
+								<p>Jan 01, 2023</p>
+							</article>
+						</div>
+			
+					<!-- Clients Review-2 Section Starts from Here  -->
+						<div class="reviewItem">
+							<div class="top">
+								<div class="clientImage">
+									<img src="assets\client.png" alt="">
+									<span>Raju Sheoran</span>
+								</div>
+								<ul>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-regular fa-star"></i></li>
+									<li><i class="fa-regular fa-star"></i></li>
+								</ul>
+							</div>
+							<article>
+								<p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+									voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+									facere exercitationem!</p>
+								<p>Jan 01, 2023</p>
+							</article>
+						</div>
+			
+					<!-- Clients Review-3 Section Starts from Here  -->
+						<div class="reviewItem">
+							<div class="top">
+								<div class="clientImage">
+									<img src="assets\client.png" alt="">
+									<span>Raju Sheoran</span>
+								</div>
+								<ul>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-solid fa-star"></i></li>
+									<li><i class="fa-regular fa-star"></i></li>
+									<li><i class="fa-regular fa-star"></i></li>
+								</ul>
+							</div>
+							<article>
+								<p class="review-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+									voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+									facere exercitationem!</p>
+								<p>Jan 01, 2023</p>
+							</article>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="faq">
 				<h1 id="faq">Frequently Asked Questions</h1>
