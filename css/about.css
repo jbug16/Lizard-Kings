@@ -3,11 +3,17 @@
 	padding: 0px;
 }
 
-/* BACKSTORY SECTION */
 .title {
 	padding: 40px;
 	text-align: center;
 }
+
+.sub-title {
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/* BACKSTORY SECTION */
 
 .important-info {
 	color: green;
@@ -23,10 +29,72 @@
 }
 
 /* PEOPLE SECTION */
+#john-smith {
+    width: 60%;
+    border-width:5px;
+	border-style:solid;
+	border-color: green;
+    border-radius: 10px;
+} /* for new peoples photos: check the resolution of the placeholder and use 
+photoshop to crop the image to the same size (so i dont have to redo the CSS) */
+
+.roll {
+    margin: 0;
+    padding-top: 8px;
+    font-weight: 650;
+}
 
 
 /* SERVICES SECTION */
+#removal {
+    padding-top: 25px;
+}
 
+.carousel {
+    height: 32rem;
+    width: 32rem;
+}
+
+.carousel:before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:31.7rem;
+    border:5px solid green;
+    /* border-radius: 5px; */
+    z-index:5;
+    pointer-events:none;
+}
+
+.carousel-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+    padding-left: 40px;
+}
+
+.carousel-item {
+    height: 32rem;
+    width: 32rem;
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
 
 /* REVIEW SECTION */
 .container {

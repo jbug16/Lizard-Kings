@@ -68,7 +68,8 @@
 			</div>
 			<div class="people">
 				<div class="container text-center">
-					<h1 id="team">Leadership</h1>
+					<h1 class="title" id="team">Our Team</h1>
+					<!-- ROW 1 -->
 					<div class="row">
 						<div class="col">
 							<img id="john-smith" src="assets/person1.jpg" alt="">
@@ -80,34 +81,91 @@
 							<p class="roll">VP & CFO</p>
 							<p class="name">John Smith</p>
 						</div>
+						<div class="col">
+							<img id="john-smith" src="assets/person1.jpg" alt="">
+							<p class="roll">#3</p>
+							<p class="name">John Smith</p>
+						</div>
 					</div>
-					<h1>Board</h1>
 					<div class="row">
 						<div class="col">
 							<img id="john-smith" src="assets/person1.jpg" alt="">
-							<p class="roll">Chair</p>
+							<p class="roll">#4</p>
 							<p class="name">John Smith</p>
 						</div>
 						<div class="col">
 							<img id="john-smith" src="assets/person1.jpg" alt="">
-							<p class="roll">Secretary</p>
+							<p class="roll">#5</p>
 							<p class="name">John Smith</p>
 						</div>
 						<div class="col">
 							<img id="john-smith" src="assets/person1.jpg" alt="">
-							<p class="roll">Treasurer</p>
+							<p class="roll">#6</p>
 							<p class="name">John Smith</p>
 						</div>
 					</div>
+					<!-- ROW 2 -->
+					 <!-- make new row if more people needed (will mess up sizing in CSS if in same row div) -->
 				</div>
 			</div>
 			<div class="services">
-				<h1 id="services">What We Do</h1>
-				<h2 id="hunts">Hunts</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis mollitia veniam molestias, unde at est labore dolores amet provident sint, dolor veritatis placeat quasi assumenda pariatur necessitatibus? Exercitationem, ad!</p>
-				<!-- add image carosal for hunting photos -->
-				<h2 id="removal">Home Removel</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis mollitia veniam molestias, unde at est labore dolores amet provident sint, dolor veritatis placeat quasi assumenda pariatur necessitatibus? Exercitationem, ad!</p>
+				<h1 id="services" class="title">Our Services</h1>
+				<h2 id="hunts" class="sub-title">Hunts</h2>
+				<div class="row">
+					<div class="col">
+						<p>At Lizard Kings Hunting Services, we provide an unparalleled hunting experience tailored to both novice and seasoned hunters. Our expert guides, equipped with years of experience and in-depth knowledge, lead you through exclusive, game-rich hunting grounds. We offer state-of-the-art equipment, ensuring you have everything you need for a successful and enjoyable hunt. Our customizable hunt packages cater to your specific preferences, whether you're pursuing big game or small game, ensuring a suitable challenge for everyone. Committed to ethical hunting practices and wildlife conservation, we educate clients on responsible techniques, promoting sustainability for future generations. Comfortable accommodations and comprehensive post-hunt services, including game processing and taxidermy referrals, ensure that your adventure is both memorable and hassle-free. Book with us today for a truly exceptional hunting experience. [placeholder]</p>
+						<ul>
+							<li>thing 1</li>
+							<li>thing 2</li>
+							<li>thing 3</li>
+							<li>thing 4</li>
+							<li>thing 5</li>
+							<li>thing 6</li>
+							<li>thing 7</li>
+							<li>thing 8</li>
+						  </ul>
+					</div>
+					<div class="col">
+						<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+								<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+								<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="overlay-image" style="background-image:url(assets/slide-1.jpg)"></div>
+									<div class="carousel-container">
+										<p>Hunting 1</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="overlay-image" style="background-image:url(assets/slide-2.jpg)"></div>
+									<div class="carousel-container">
+										<p>Hunting 2</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="overlay-image" style="background-image:url(assets/slide-3.jpg)"></div>
+									<div class="carousel-container">
+										<p>Hunting 3</p>
+									</div>
+								</div>
+								<a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+									<span class="sr-only"></span>
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								</a>
+								<a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+									<span class="sr-only"></span>
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								</a>
+							</div>
+						</div> 
+					</div>
+				</div>
+
+				<h2 id="removal" class="sub-title">Home Removel</h2>
+				<p>At Lizard Kings Home Removal Services, we specialize in the safe and efficient removal of lizards, iguanas, and other reptiles from your home. Our team of trained professionals uses humane and environmentally friendly methods to capture and relocate these creatures, ensuring they are safely returned to their natural habitat. We offer prompt and reliable service, addressing infestations quickly to restore peace and comfort to your living space. Our expertise in reptile behavior and advanced removal techniques guarantees minimal disruption to your home while effectively resolving the issue. Trust Lizard Kings Home Removal Services to provide a safe, humane, and effective solution to your reptile problems, allowing you to enjoy a lizard-free home. [placeholder]</p>
 			</div>
 			<div class="review">
 				<div class="container">
