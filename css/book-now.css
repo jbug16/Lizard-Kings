@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.form-group {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.submit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
