@@ -1,6 +1,12 @@
 .booking-form {
-    max-width: 600px;
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.responsive-iframe {
+    width: 100%;
 }
