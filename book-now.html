@@ -29,17 +29,114 @@
         </nav>
 
 		<!-- Booking Form -->
-        <div class="container booking-form">
+        <!-- <div class="container booking-form">
             <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeP8z4nkcfxP8R6iRz7u-00HEUWGYrmmTDPXSU1CrNDetboMQ/viewform?usp=sf_link" height="1800">
                 Loading…
             </iframe>
-        </div>
-        
+        </div> -->
 
-		<!-- Footer-->
-		<footer class="py-1 bg-dark">
-			<div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Lizard Kings 2024</p></div>
-		</footer>
+        <!-- Main content container -->
+        <div class="container">
+            <div class="card mt-5">
+                <!-- Start Card Body -->
+                <div class="card-body">
+                    <!-- Start Form -->
+                    <form id="bookingForm" action="#" method="" class="needs-validation" novalidate autocomplete="off">
+                        <!-- Start Input Name -->
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" name="entry.1833791047" placeholder="Your name" required />
+                        </div>
+
+                        <!-- Start Input Email -->
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" name="entry.1543666947" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+
+                        <!-- Start Input Address -->
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" name="entry." placeholder="Address line" required />
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity" name="entry." placeholder="City" required />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="inputState">State</label>
+                                    <select class="form-control" id="inputState" name="entry." required>
+                                        <option selected disabled value="">State</option>
+                                        <option>FL</option>
+                                        <option>GA</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="inputZip">Zip Code</label>
+                                    <input type="text" class="form-control" id="inputZip" name="entry." placeholder="000000" required />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Start Input Telephone -->
+                        <div class="form-group">
+                            <label for="inputPhone">Phone</label>
+                            <input type="tel" class="form-control" id="inputPhone" name="entry.1795485777" placeholder="+1 000-000-0000" pattern="\d{3}\d{3}\d{4}" required />
+                            <small class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+                        </div>
+
+                        <!-- Start Input Service  -->
+                        <div class="form-group">
+                            <label for="inputService">Service</label>
+                            <select class="form-control" id="inputService" name="entry.1709157269" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>Hunt</option>
+                                <option>Home Removal</option>
+                            </select>
+                        </div>
+
+                        <!-- Start Input Date, Start Time, and End Time -->
+                        <div class="form-row">
+                            <!-- Start Input Date -->
+                            <div class="form-group col-md-4">
+                                <label for="inputDate">Date</label>
+                                <input type="date" class="form-control" id="inputDate" name="entry.948192708" required />
+                            </div>
+                        </div>
+
+                        <!-- Start Input Service  -->
+                        <div class="form-group">
+                            <label for="inputTime">Time</label>
+                            <select class="form-control" id="inputTime" name="entry." required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>10:00 AM</option>
+                                <option>11:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>1:00 PM</option>
+                                <option>2:00 PM</option>
+                                <option>3:00 PM</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-primary btn-block col-lg-2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="py-1 bg-dark">
+            <div class="container-fluid px-4 px-lg-5">
+                <p class="m-0 text-center text-white">Copyright &copy; Lizard Kings 2024</p>
+            </div>
+        </footer>
 
 
 		<!-- Bootstrap core JS-->
