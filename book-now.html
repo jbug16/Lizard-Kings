@@ -29,92 +29,101 @@
         </nav>
 
 		<!-- Booking Form -->
-        <!-- <div class="container booking-form">
-            <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeP8z4nkcfxP8R6iRz7u-00HEUWGYrmmTDPXSU1CrNDetboMQ/viewform?usp=sf_link" height="1800">
-                Loading…
-            </iframe>
-        </div> -->
+        <!-- https://docs.google.com/forms/u/0/d/e/1FAIpQLSeP8z4nkcfxP8R6iRz7u-00HEUWGYrmmTDPXSU1CrNDetboMQ/formResponse -->
+        <!-- 
+            Name: 1833791047
+            Email: 1543666947
+            Street address: 1601067037
+            City: 798182371
+            State: 433988214
+            Zipcode: 1026601069
+            Phone number: 1795485777
+            Service: 1709157269
+            Date: 948192708
+            Time: 1325124317
+        -->
 
         <!-- Main content container -->
         <div class="container">
             <div class="card mt-5">
-                <!-- Start Card Body -->
                 <div class="card-body">
-                    <!-- Start Form -->
-                    <form id="bookingForm" action="#" method="" class="needs-validation" novalidate autocomplete="off">
-                        <!-- Start Input Name -->
+                    <form id="bookingForm" action="#" method="" class="needs-validation" novalidate autocomplete="off" onsubmit="return postToGoogle();">
+                        <!-- Name -->
                         <div class="form-group">
                             <label for="inputName">Name</label>
-                            <input type="text" class="form-control" id="inputName" name="entry.1833791047" placeholder="Your name" required />
+                            <fieldset><input type="text" class="form-control" id="inputName" name="entry.1833791047" placeholder="Your name" required /></fieldset>
                         </div>
 
-                        <!-- Start Input Email -->
+                        <!-- Email -->
                         <div class="form-group">
                             <label for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" name="entry.1543666947" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                            <fieldset><input type="email" class="form-control" id="inputEmail" name="entry.1543666947" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /></fieldset>
                             <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
 
-                        <!-- Start Input Address -->
+                        <!-- Address -->
                         <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" name="entry." placeholder="Address line" required />
+                            <!-- Street -->
+                            <label for="inputAddress">Street Address</label>
+                            <fieldset><input type="text" class="form-control" id="inputAddress" name="entry.1601067037" placeholder="Address line" required /></fieldset>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
+                                    <!-- City -->
                                     <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity" name="entry." placeholder="City" required />
+                                    <fieldset><input type="text" class="form-control" id="inputCity" name="entry.798182371" placeholder="City" required /></fieldset>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
+                                    <!-- State -->
                                     <label for="inputState">State</label>
-                                    <select class="form-control" id="inputState" name="entry." required>
+                                    <fieldset><select class="form-control" id="inputState" name="entry.433988214" required>
                                         <option selected disabled value="">State</option>
                                         <option>FL</option>
                                         <option>GA</option>
-                                    </select>
+                                    </select></fieldset>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
+                                    <!-- Zip Code -->
                                     <label for="inputZip">Zip Code</label>
-                                    <input type="text" class="form-control" id="inputZip" name="entry." placeholder="000000" required />
+                                    <fieldset><input type="text" class="form-control" id="inputZip" name="entry.1026601069" placeholder="000000" required /></fieldset>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Start Input Telephone -->
+                        <!-- Telephone -->
                         <div class="form-group">
                             <label for="inputPhone">Phone</label>
-                            <input type="tel" class="form-control" id="inputPhone" name="entry.1795485777" placeholder="+1 000-000-0000" pattern="\d{3}\d{3}\d{4}" required />
+                            <fieldset><input type="tel" class="form-control" id="inputPhone" name="entry.1795485777" placeholder="+1 000-000-0000" pattern="\d{3}\d{3}\d{4}" required /></fieldset>
                             <small class="form-text text-muted">We'll never share your phone number with anyone else.</small>
                         </div>
 
-                        <!-- Start Input Service  -->
+                        <!-- Service -->
                         <div class="form-group">
                             <label for="inputService">Service</label>
-                            <select class="form-control" id="inputService" name="entry.1709157269" required>
+                            <fieldset><select class="form-control" id="inputService" name="entry.1709157269" required>
                                 <option selected disabled value="">Choose...</option>
                                 <option>Hunt</option>
                                 <option>Home Removal</option>
-                            </select>
+                            </select></fieldset>
                         </div>
 
-                        <!-- Start Input Date, Start Time, and End Time -->
+                        <!-- Date -->
                         <div class="form-row">
-                            <!-- Start Input Date -->
                             <div class="form-group col-md-4">
                                 <label for="inputDate">Date</label>
-                                <input type="date" class="form-control" id="inputDate" name="entry.948192708" required />
+                                <fieldset><input type="date" class="form-control" id="inputDate" name="entry.948192708" required /></fieldset>
                             </div>
                         </div>
 
-                        <!-- Start Input Service  -->
+                        <!-- Time -->
                         <div class="form-group">
                             <label for="inputTime">Time</label>
-                            <select class="form-control" id="inputTime" name="entry." required>
+                            <fieldset><select class="form-control" id="inputTime" name="entry.1325124317" required>
                                 <option selected disabled value="">Choose...</option>
                                 <option>10:00 AM</option>
                                 <option>11:00 AM</option>
@@ -122,7 +131,7 @@
                                 <option>1:00 PM</option>
                                 <option>2:00 PM</option>
                                 <option>3:00 PM</option>
-                            </select>
+                            </select></fieldset>
                         </div>
 
                         <button class="btn btn-primary btn-block col-lg-2" type="submit">Submit</button>
@@ -137,6 +146,50 @@
                 <p class="m-0 text-center text-white">Copyright &copy; Lizard Kings 2024</p>
             </div>
         </footer>
+
+        <!-- Booking Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            function postToGoogle() {
+            var field1 = $("#inputName").val();
+            var field2 = $("#inputEmail").val();
+            var field3 = $("#inputAddress").val();
+            var field4 = $("#inputCity").val();
+            var field5 = $("#inputState").val();
+            var field6 = $("#inputZip").val();
+            var field7 = $("#inputPhone").val();
+            var field8 = $("#inputService").val();
+            var field9 = $("#inputDate").val();
+            var field10 = $("#inputTime").val();
+
+            $.ajax({
+                url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeP8z4nkcfxP8R6iRz7u-00HEUWGYrmmTDPXSU1CrNDetboMQ/formResponse",
+                 
+                data: {
+                "entry.1833791047": field1,
+                "entry.1543666947": field2,
+                "entry.1601067037": field3,
+                "entry.798182371": field4,
+                "entry.433988214": field5,
+                "entry.1026601069": field6,
+                "entry.1795485777": field7,
+                "entry.1709157269": field8,
+                "entry.948192708": field9,
+                "entry.1325124317": field10,
+                },
+                type: "POST",
+                dataType: "xml",
+                success: function (d) {
+                $('#bookingForm').trigger('reset');//
+                },
+                error: function (x, y, z) {
+                $('#bookingForm').trigger('reset');//
+                }
+            });
+            return false;
+            }
+        </script>
 
 
 		<!-- Bootstrap core JS-->
