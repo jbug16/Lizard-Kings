@@ -29,108 +29,22 @@
         </nav>
 
 		<!-- Main content container -->
-        <div class="container booking-form">
-            <div class="card mt-5">
-                <div class="card-body">
-                    <h1>Make a Reservation Today!</h1>
-                    <form id="bookingForm" action="other.html" method="get" class="needs-validation" novalidate autocomplete="off">
-                        <!-- Name -->
-                        <div class="form-group">
-                            <label for="inputName">Name</label>
-                            <fieldset><input type="text" class="form-control" id="inputName" placeholder="Your name" required /></fieldset>
-                            <div class="invalid-feedback"></div>
-                        </div>
-
-                        <!-- Email -->
-                        <div class="form-group">
-                            <label for="inputEmail">Email</label>
-                            <fieldset><input type="email" class="form-control" id="inputEmail" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /></fieldset>
-                            <div class="invalid-feedback"></div>
-                        </div>
-
-                        <!-- Address -->
-                        <div class="form-group">
-                            <!-- Street -->
-                            <label for="inputAddress">Street Address</label>
-                            <fieldset><input type="text" class="form-control" id="inputAddress" placeholder="Address line" required /></fieldset>
-                            <div class="invalid-feedback"></div>
-                        </div>
-                        <div class="row">
-                            <!-- City -->
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="inputCity">City</label>
-                                    <fieldset><input type="text" class="form-control" id="inputCity" placeholder="City" required /></fieldset>
-                                    <div class="invalid-feedback"></div>
-                                </div>
-                            </div>
-                            <!-- State -->
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="inputState">State</label>
-                                    <fieldset><select class="form-control" id="inputState" required>
-                                        <option selected disabled value="">State</option>
-                                        <option>FL</option>
-                                        <option>GA</option>
-                                    </select></fieldset>
-                                    <div class="invalid-feedback"></div>
-                                </div>
-                            </div>
-                            <!-- Zip Code -->
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="inputZip">Zip Code</label>
-                                    <fieldset><input type="text" class="form-control" id="inputZip" placeholder="00000" required /></fieldset>
-                                    <div class="invalid-feedback"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Telephone -->
-                        <div class="form-group">
-                            <label for="inputPhone">Phone</label>
-                            <fieldset><input type="tel" class="form-control" id="inputPhone" placeholder="+1 000-000-0000" pattern="\d{3}\d{3}\d{4}" required /></fieldset>
-                            <div class="invalid-feedback"></div>
-                        </div>
-
-                        <!-- Service -->
-                        <div class="form-group">
-                            <label for="inputService">Service</label>
-                            <fieldset><select class="form-control" id="inputService" required>
-                                <option selected disabled value="">Choose...</option>
-                                <option>Hunt</option>
-                                <option>Home Removal</option>
-                            </select></fieldset>
-                            <div class="invalid-feedback"></div>
-                        </div>
-
-                        <!-- Date -->
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <label for="inputDate">Date</label>
-                                <fieldset><input type="date" class="form-control" id="inputDate" required /></fieldset>
-                            </div>
-                            <div class="invalid-feedback"></div>
-                        </div>
-
-                        <!-- Time -->
-                        <div class="form-group">
-                            <label for="inputTime">Time</label>
-                            <fieldset><select class="form-control" id="inputTime" required>
-                                <option selected disabled value="">Choose...</option>
-                                <option>10:00 AM</option>
-                                <option>11:00 AM</option>
-                                <option>12:00 PM</option>
-                                <option>1:00 PM</option>
-                                <option>2:00 PM</option>
-                                <option>3:00 PM</option>
-                            </select></fieldset>
-                            <div class="invalid-feedback"></div>
-                        </div>
-
-                        <div class="submit"><button id="btn" class="btn btn-primary btn-block col-lg-2" type="submit" value="Submit">Submit</button></div>
-                    </form>
-                </div>
+        <div class="body">
+            <div class="booking-container">
+                <form method="post" action="" name="contact-form">
+                    <h4>Contact Us</h4>
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                    <input type="text" name="Number" placeholder="Number" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <fieldset><select name="Service" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Hunt</option>
+                        <option>Home Removal</option>
+                    </select></fieldset>
+                    <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
             </div>
         </div>
 

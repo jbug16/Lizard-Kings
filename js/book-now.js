@@ -1,40 +1,11 @@
-let form = document.querySelector('#bookingForm');
-    form.addEventListener('submit',(event)=>{
-        // Prevent submit
-        event.preventDefault();
-        // find inputs, textareas, and selects within the parent
-        let children = event.target.querySelectorAll('input, textarea, select');
-        // find if any of them are empty
-        let findEmpty = Array.from(children).find((element)=>{
-            if(element.value.length < 1){return true}
-            return false
-        });
-        // check if found an empty child
-        if(findEmpty){
-            
-            
-        }else{
-            // if not submit form
-            event.target.submit();
-        }
-    }
-);
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwDxb4piJHZzE8aXlTVLUr5leproxZdXzsFMtN2jANlrj81Foi03ERQPvzjNYIflcNkLA/exec'
 
-(() => {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-            }
-    
-            form.classList.add('was-validated')
-        }, false)
-    })
-})()
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})

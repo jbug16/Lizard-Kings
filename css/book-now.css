@@ -1,16 +1,51 @@
-.card-body {
-    padding: 20px;
+.body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.booking-form {
-    padding-bottom: 60px;
-    padding-top: 15px;
+.booking-container{
+	width: 500px;
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: #212529;
 }
 
-.form-group {
-    padding-top: 10px;
+h4{
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
 }
 
-.submit {
-    padding-top: 20px;
+input{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+textarea{
+	width: 100%;
+	padding: 10px;
+}
+
+select{
+	width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#submit{
+	border: none;
+	background-color: #005b0c;
+	color: white;
+	width: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+#submit:hover{
+	background-color: #ffffff;
+    color: black;
 }
