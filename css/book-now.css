@@ -3,11 +3,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 20px;
 }
 
 .booking-container{
 	width: 500px;
-	padding: 30px;
+	padding: 15px;
 	border: 1px solid #eeeeee;
 	border-radius: 10px;
 	background-color: #212529;
@@ -40,7 +41,7 @@ select{
 	border: none;
 	background-color: #005b0c;
 	color: white;
-	width: 200px;
+	width: 150px;
 	margin-top: 10px;
 	border-radius: 5px;
 }
@@ -48,4 +49,9 @@ select{
 #submit:hover{
 	background-color: #ffffff;
     color: black;
+}
+
+.submit-btn {
+	display: flex;
+	justify-content: center;
 }
