@@ -1,6 +1,11 @@
 * {
-	margin: 0px;
-	padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .title {
@@ -28,6 +33,31 @@
 	width: 80%;
 }
 
+@media screen and (max-width: 1399px) {
+    .backstory-img {
+        padding-left: 0; 
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .backstory-img {
+        padding-top: 90px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .backstory-img {
+        padding-top: 190px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .backstory-img {
+        padding-top: 10px;
+    }
+}
+
 /* PEOPLE SECTION */
 #john-smith {
     width: 60%;
@@ -50,22 +80,26 @@ photoshop to crop the image to the same size (so i dont have to redo the CSS) */
     padding-top: 25px;
 }
 
+.services-carousel {
+    padding-left: 90px;
+}
+
 .carousel {
     height: 32rem;
     width: 32rem;
+    position: relative;
 }
 
-.carousel:before{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    padding-top:31.6rem;
-    border:5px solid green;
-    /* border-radius: 5px; */
-    z-index:5;
-    pointer-events:none;
+.carousel:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 31.6rem;
+    border: 5px solid green;
+    z-index: 5;
+    pointer-events: none;
 }
 
 .carousel-container {
@@ -95,6 +129,207 @@ photoshop to crop the image to the same size (so i dont have to redo the CSS) */
     background-size: cover;
     opacity: 0.7;
 }
+
+@media (max-width: 1399px) {
+    .services-carousel {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .services-carousel {
+        padding-left: 15px;
+    }
+
+    .carousel {
+        height: 26rem;
+        width: 26rem;
+    }
+
+    .carousel:before {
+        padding-top: 25.6rem;
+    }
+
+    .carousel-item {
+        height: 26rem;
+        width: 26rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .services-carousel {
+        padding-left: 15px;
+    }
+
+    .carousel {
+        height: 21rem;
+        width: 21rem;
+    }
+
+    .carousel:before {
+        padding-top: 20.6em;
+    }
+
+    .carousel-item {
+        height: 21rem;
+        width: 21rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .carousel:before {
+        padding-top: 29.6em;
+    }
+
+    .carousel-item {
+        height: 30rem;
+        width: 30rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .services-carousel {
+        padding-left: 30px;
+    }
+
+    .carousel {
+        height: 28rem;
+        width: 28rem;
+    }
+
+    .carousel:before {
+        padding-top: 27.6em;
+    }
+
+    .carousel-item {
+        height: 28rem;
+        width: 28rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .services-carousel {
+        padding-left: 30px;
+    }
+
+    .carousel {
+        height: 26rem;
+        width: 26rem;
+    }
+
+    .carousel:before {
+        padding-top: 25.6em;
+    }
+
+    .carousel-item {
+        height: 26rem;
+        width: 26rem;
+    }
+}
+
+@media (max-width: 465px) {
+    .services-carousel {
+        padding-left: 30px;
+    }
+
+    .carousel {
+        height: 24rem;
+        width: 24rem;
+    }
+
+    .carousel:before {
+        padding-top: 23.6em;
+    }
+
+    .carousel-item {
+        height: 24rem;
+        width: 24rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .services-carousel {
+        padding-left: 30px;
+    }
+
+    .carousel {
+        height: 22rem;
+        width: 22rem;
+    }
+
+    .carousel:before {
+        padding-top: 21.6em;
+    }
+
+    .carousel-item {
+        height: 22rem;
+        width: 22rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .services-carousel {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .services-carousel {
+        padding-left: 30px;
+    }
+
+    .carousel {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .carousel:before {
+        padding-top: 19.6em;
+    }
+
+    .carousel-item {
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .services-carousel {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .services-carousel {
+        padding-left: 30px;
+    }
+
+    .carousel {
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .carousel:before {
+        padding-top: 17.6em;
+    }
+
+    .carousel-item {
+        height: 18rem;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 344px) {
+    .services-carousel {
+        padding-left: 17px;
+    }
+}
+
 
 /* REVIEW SECTION */
 .container {
