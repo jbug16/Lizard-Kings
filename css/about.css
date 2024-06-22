@@ -433,3 +433,6 @@ photoshop to crop the image to the same size (so i dont have to redo the CSS) */
 }
 
 /* FAQ SECTION */
+.accordion {
+    padding-bottom: 80px;
+}
