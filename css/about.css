@@ -84,6 +84,10 @@ photoshop to crop the image to the same size (so i dont have to redo the CSS) */
     padding-left: 90px;
 }
 
+.removal-carousel {
+    
+}
+
 .carousel {
     height: 32rem;
     width: 32rem;
