@@ -1,0 +1,38 @@
+.thank-you {
+    font-size: 5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.social-media {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: aqua;
+}
+
+footer, .push {
+    height: 100px;
+}
+
+.confirmation {
+    min-height: 100vh;
+    margin-bottom: 100px;
+}

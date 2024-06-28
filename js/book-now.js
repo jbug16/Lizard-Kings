@@ -6,8 +6,8 @@ form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 
-  setTimeout(function() {
-    form.reset();
-    window.location.href = "other.html";
-  }, 500);
+  // setTimeout(function() {
+  //   form.reset();
+  //   window.location.href = "confirmation.html";
+  // }, 500);
 })
