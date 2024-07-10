@@ -14,7 +14,7 @@ body {
 }
 
 .sub-title {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     text-align: left;
 }
 
@@ -82,10 +82,6 @@ photoshop to crop the image to the same size (so i dont have to redo the CSS) */
 
 .services-carousel {
     padding-left: 90px;
-}
-
-.removal-carousel {
-    
 }
 
 .carousel {
