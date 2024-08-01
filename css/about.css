@@ -127,7 +127,7 @@ photoshop to crop the image to the same size (so i dont have to redo the CSS) */
     top: 0;
     background-position: center;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 @media (max-width: 1399px) {
