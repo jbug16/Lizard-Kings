@@ -45,11 +45,17 @@
 .buy-button {
     font-size: 18px;
     color: #ffffff;
-    background-color: #00c227;
+    background-color: green;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
     border-radius: 6px;
+}
+
+.buy-button:hover {
+    transform: scale(1.04);
+    background-color: green;
+    color: #FFFFFF;
 }

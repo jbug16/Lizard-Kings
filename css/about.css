@@ -365,17 +365,13 @@ photoshop to crop the image to the same size (so i dont have to redo the CSS) */
     margin: 1rem;
     cursor: pointer;
     border-radius: 10px;
-    background-color: #10102a;
-    border: 1px solid #10102a;
+    background-color: #000000;
     transition: all .2s linear;
 }
 
 .reviewItem:hover {
-    border-color: rgb(48, 182, 0);
     transform: scale(1.01);
-    background-color: white;
-    box-shadow: 0 0px 5px 0px #cbc0c0;
-	color: #10102a;
+    box-shadow: 0 0px 10px 0px green;
 }
 
 .top {
